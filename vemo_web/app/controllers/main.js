@@ -7,7 +7,7 @@ app
 
     $scope.menu = menuService;
     $scope.app = {
-        name: 'VEMO',
+        name: 'MOTOS',
         version: '1.0.1',
 
         setting: {

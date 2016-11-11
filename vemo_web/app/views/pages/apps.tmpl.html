@@ -10549,22 +10549,6 @@ cr.define('ntp', function() {
     },
 
     /**
-     * Called when a card is removed or added.
-     * @private
-     */
-    onCardAddedOrRemoved_: function() {
-      if (this.isStartingUp_())
-        return;
-
-      // Without repositioning there were issues - http://crbug.com/133457.
-      this.cardSlider.repositionFrame();
-      this.updatePageSwitchers();
-    },
-
-    /**
-     * Save the name of an apps page.
-     * Store the apps page name into the preferences store.
-     * @param {ntp.AppsPage} appPage The app page for which we wish to save.
      * @param {string} name The name of the page.
      */
     saveAppPageName: function(appPage, name) {
@@ -12247,9 +12231,6 @@ i18nTemplate.process(document, loadTimeData);
 
 
 
-
-
-
 <md-sidenav  md-component-id="aside">
 </md-sidenav>
 
@@ -12258,11 +12239,12 @@ i18nTemplate.process(document, loadTimeData);
     
 
     
-        <h2 class="md-headline" style="margin-top: 0;">Elija aplicación</h2>
+        <h2 class="md-headline" style="margin-top: 0;" >escoja una opcion</h2>
         <ul class="buckets" layout layout-align="center center" layout-wrap>
+
             <li flex="10" flex-md="25" flex-sm="50" flex-xs="50" ng-repeat="(index, link) in [
         { href: 'app', icon: 'school', text: 'Getting Started' },
-        { href: 'app', icon: 'play_circle_fill', text: 'Demos' },
+        { href: 'app', icon: 'play_circle_fill', text: 'Michael' },
         { href: 'app', icon: 'build', text: 'Customization' },
         { href: 'app', icon: 'code', text: 'API Reference' },
         { href: 'app', icon: 'code', text: 'API Reference' },
@@ -12281,6 +12263,8 @@ i18nTemplate.process(document, loadTimeData);
                     {{link.text}}
                 </md-button>
             </li>
+
+
         </ul>
         <md-divider></md-divider>
         <p class="md-caption" style="text-align: center; margin-bottom: 0;">

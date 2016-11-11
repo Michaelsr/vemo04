@@ -93,36 +93,32 @@ app
     sections.push({
 
         menu: [{
-            title: 'Catálogo',
+            title: 'MARCAS',
             type: 'toggle',
             state: 'catalogo.catalogo',
             menu_items: [{
-                title: 'Categorías',
+                title: 'motores',
                 state: 'catalogo.catalogo.categorias',
                 type: 'link'
             }, {
-                title: 'Autores',
+                title: 'modelos',
                 state: 'catalogo.catalogo.autores',
                 type: 'link'
             }, ]
         }]
     });
 
-    sections.push({
+        sections.push({
 
         menu: [{
-            title: 'Michael',
+            title: 'marcas vemo',
             type: 'toggle',
-            state: 'catalogo.catalogo',
+            state: 'marcas.vemo',
             menu_items: [{
-                title: 'Categorías',
-                state: 'catalogo.catalogo.categorias',
+                title: 'Catalogacion',
+                state: 'catalogo.vemo.catalogacion',
                 type: 'link'
-            }, {
-                title: 'Autores',
-                state: 'catalogo.catalogo.autores',
-                type: 'link'
-            }, ]
+            },  ]
         }]
     });
 
